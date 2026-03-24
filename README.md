@@ -4,8 +4,8 @@
 *This Markdown version provides a structured and readable presentation of the CIF 3.0 documentation.
 All official, complete, and authoritative details — including annexes, methodological notes, and formal definitions — are available in the PDF reference documents that accompany this dossier.*
 
-- [CompaniX - Agronomic Validation Dossier](<./CompaniX - Agronomic Validation Dossier.odt>)
-- [CompaniX - Dossier de Validation Agronomique FR](<./CompaniX - Dossier de Validation Agronomique FR.odt>)
+- [CompaniX - Agronomic Validation Dossier](<./CompaniX - Agronomic Validation Dossier.pdf>)
+- [CompaniX - Dossier de Validation Agronomique FR](<./CompaniX - Dossier de Validation Agronomique FR.pdf>)
 
 
 ---
