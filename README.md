@@ -1,17 +1,12 @@
-# CompaniX-CIF
-CompaniX Cycle Invariant File
+# ***[CompaniX]™ : Inspired by life, for life.***
 
+***Note:***  
+*This Markdown version provides a structured and readable presentation of the CIF 3.0 documentation.
+All official, complete, and authoritative details — including annexes, methodological notes, and formal definitions — are available in the PDF reference documents that accompany this dossier.*
 
-## License
+- [CompaniX - Agronomic Validation Dossier](<./CompaniX - Agronomic Validation Dossier.odt>)
+- [CompaniX - Dossier de Validation Agronomique FR](<./CompaniX - Dossier de Validation Agronomique FR.odt>)
 
-This project is licensed under the **Apache License 2.0** – an open, permissive license that allows anyone (including commercial entities) to copy, modify, and redistribute the Cycle Invariant File (CIF) and related tools, as long as they keep the original attribution and do not misuse our brand.
-
-This reflects our strategy to make **CIF a fully open standard** for precision agriculture, interoperable across farms, drones, OADs, and agronomic software.
-
----
-
-# **[CompaniX]™**  
-*Inspired by life, for life.*
 
 ---
 
@@ -461,7 +456,15 @@ CompaniX is a **cognitive infrastructure**, not a platform.
 |   Automated Reports)  |               |   & Regional Monitoring)  |              |  Yield Optimization)  |
 +-----------------------+               +---------------------------+              +-----------------------+
 ```
+---
 
+## License
+
+This project is licensed under the **Apache License 2.0** – an open, permissive license that allows anyone (including commercial entities) to copy, modify, and redistribute the Cycle Invariant File (CIF) and related tools, as long as they keep the original attribution and do not misuse our brand.
+
+This reflects our strategy to make **CIF a fully open standard** for precision agriculture, interoperable across farms, drones, OADs, and agronomic software.
+
+---
 
 ## Project Ownership
 
