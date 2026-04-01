@@ -14,8 +14,27 @@ All official, complete, and authoritative details — including annexes, methodo
 ### **Validation of the JSON Structure Representing a Full Crop Cycle**
 
 **Supported by Innosuisse**  
-**Version: 3.4 — 2026‑03‑24**  
+**Version: 3.2 — 2026‑04‑01**  
 **Background IP: Jan Affolter ITS (CHE‑104.801.264), owner of the CompaniX project.**
+
+---
+
+# **Release Notes**
+
+## Version: 3.2 — 2026‑04‑01
+This release introduces a single but major structural enhancement:
+
+- **Addition of the `pre_establishment` stage**, covering **all agronomic conditions and management actions occurring between harvest and sowing**.  
+  This includes:
+  - soil structural evolution  
+  - soil preparation  
+  - early weed control  
+  - soil moisture and temperature dynamics  
+  - spatial variability indicators  
+  - any intervention affecting the next crop’s establishment  
+
+No other structural changes were made to the CIF JSON schema.
+
 
 ---
 
@@ -77,20 +96,21 @@ This document presents the complete structure of CIF 3.0 and requests a formal a
 
 ---
 
-# **1. Purpose of the Document**
+# **1. Purpose of the Document**  
 
-This document requests a **formal agronomic validation** of the JSON structure for the **CIF – Cycle Invariant File, version 3.0**.
+This document requests a **formal agronomic validation** of the JSON structure used in the **CIF – Cycle Invariant File**.
 
-The objective is to confirm that this format is:
+The objective is to confirm that the format is:
 
 - scientifically sound  
 - physiologically coherent  
-- sufficient to explain yield differences between plots sharing:  
+- operationally relevant  
+- and sufficient to explain yield differences between plots sharing:  
   - the same soil type  
   - the same climate  
   - the same cultivated variety  
 
-Within this homogeneous context, CIF 3.0 must allow for the identification of the factors truly responsible for performance gaps: management, stress, variability, water dynamics, biotic pressure, as well as physical or topographical constraints.
+Within this homogeneous context, the CIF must allow for the identification of the factors truly responsible for performance gaps: management decisions, abiotic and biotic stress, water dynamics, spatial variability, and physical or topographical constraints.
 
 The CIF summarizes the crop cycle through **agronomic invariants** that reflect the **conditions actually experienced** by the crop, enriched by **growth indicators** (`growthmetrics`) and summary blocks for yield and stress.
 
@@ -108,9 +128,9 @@ The CIF does not model the crop: it documents the invariants, growth indicators,
 
 ---
 
-## **2.1 What CIF 3.0 Captures**
+## **2.1 What the CIF Captures**
 
-CIF 3.0 captures invariant and derived agronomic information that is:
+The CIF captures invariant and derived agronomic information that is:
 
 - measurable  
 - comparable  
@@ -120,7 +140,16 @@ CIF 3.0 captures invariant and derived agronomic information that is:
 This information is organized:
 
 - at the **cycle level** (plot identity, crop, variety, `variety_traits`, `soil_analysis`, yield summaries)  
-- by **physiological stages** (`establishment`, `vegetative`, `flowering`, `grain_filling`, `maturation`)
+- by **physiological stages**, including:  
+  - `pre_establishment`  
+  - `establishment`  
+  - `vegetative`  
+  - `flowering`  
+  - `grain_filling`  
+  - `maturation`  
+
+The addition of the `pre_establishment` stage ensures that the CIF covers **all agronomic conditions and interventions occurring between harvest and sowing**, completing the causal chain of the crop cycle.
+
 
 ### **a. Cycle Metadata and Global Climate**
 
