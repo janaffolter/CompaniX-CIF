@@ -1,5 +1,5 @@
 {
-  "cif_version": "3.2",
+  "cif_version": "4.0",
   "id_cycle": "P-12-wheat-2025",
   "plot_id": "P-12",
   "crop": "wheat",
@@ -464,6 +464,32 @@
     "yield_gap_t_ha": 3.7,
     "main_yield_limiting_factor": "water_stress_flowering",
     "harvest_index": 0.45
+  },
+
+  "plant_invariants": {
+    "crop": "wheat",
+    "variety": "Apache",
+
+    "nir_measured": {
+      "dry_matter_percent": 88.5,
+      "protein_percent_dm": 12.8,
+      "starch_percent_dm": 62.3,
+      "fiber_ndf_percent_dm": 11.4
+    },
+
+    "derived_nutrition": {
+      "digestibility_percent_dm": 82.0,
+      "energy_mj_per_kg_dm": 13.2,
+      "amino_acid_pattern": "cereal_typical"
+    },
+
+    "systemic_invariants": {
+      "sovereignty_score": 0.82,
+      "circularity_score": 0.76,
+      "water_pressure_class": "medium",
+      "nitrogen_pressure_class": "low",
+      "interannual_stability_class": "high"
+    }
   },
 
   "yield": 6.8,
