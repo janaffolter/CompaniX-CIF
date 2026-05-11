@@ -1,16 +1,80 @@
-# ***[CompaniX]™ : Inspired by life, for life.***
+# ***AUTOFARM™ : Inspired by life, for life.***
 
 
-- [CompaniX - Presentation of the CIF - Cycle Invariant File](<./CompaniX - Presentation of the CIF - Cycle Invariant File.pdf>)
-- [CompaniX - CIF JSON File](<./cif.json>)
+- [AUTOFARM - Presentation of the CIF - Cycle Invariant File](<./AUTOFARM - Presentation of the CIF - Cycle Invariant File.pdf>)
+- [AUTOFARM - CIF JSON File](<./cif.json>)
 
 # **CIF – Cycle Invariant File**  
 ### **Shared Agronomic Framework for Crop Cycle Analysis**
 
-**Supported by Innosuisse**  
-**Version: 4.0 — 2026‑04‑10**  
+**Beneficiary of an Innosuisse Mentoring Voucher (Swiss Innovation Agency).**  
+Reference: **136.046 IMIA‑ENG — CompaniX**
+
+## Release Notes
+**Version: 5.0 — 2026‑05‑06**  
+
 
 # **Release Notes**  
+## **Version: 5.0 — 2026‑05‑06**
+
+This release expands the CIF with two major functional enhancements that strengthen its ability to explain yield variability and support large‑scale production analytics.
+
+---
+
+## **1. Addition of `microbiology` within `soil_analysis`**
+
+A new **`microbiology`** subsection has been added to the `soil_analysis` block, capturing key indicators of soil biological health (bacterial and fungal diversity, mycorrhizal potential, pathogen pressure, microbial activity).
+
+```json 
+"microbiology": {
+  "bacterial_diversity_index": 0.71,
+  "fungal_diversity_index": 0.64,
+  "mycorrhizal_potential_index": 0.58,
+  "pathogen_pressure_index": 0.22,
+  "microbial_activity_index": 0.49
+}
+```
+
+### **Purpose of this addition**
+Recent advances in soil metagenomics show that the **soil microbiome is a major driver of yield stability**, nutrient availability, and crop resilience. Integrating these indicators provides a more complete representation of soil function beyond chemistry and texture.
+
+### **Scalability**
+All microbiological indicators included in this block are measurable through **standardized, high‑throughput laboratory workflows** (16S/ITS sequencing and PLFA). These methods are already **deployable at farm scale**, making the block fully usable in production environments.
+
+---
+
+## **2. Addition of `light_environment` across all growth stages**
+
+A new **`light_environment`** block is now included in every growth stage from *establishment* to *maturation*. It captures PAR, DLI, spectral ratios (R:FR, blue fraction), photoperiod, and a light‑stress index.
+
+```json 
+"light_environment": {
+  "par_mean": 520,
+  "dli": 32.5,
+  "red_farred_ratio": 1.25,
+  "blue_fraction": 18.2,
+  "photoperiod_hours": 14.8,
+  "light_stress_index": 0.12
+}
+```
+
+### **Purpose of this addition**
+Modern plant photobiology demonstrates that **light quality and cumulative light exposure strongly influence canopy architecture, vigor, competition, and stress responses**—all key determinants of yield formation. Tracking these variables across stages enables a dynamic understanding of crop development.
+
+### **Scalability**
+All variables in this block are measurable using **commercial, field‑ready IoT systems** (e.g., PAR sensors and spectral sensors from Pessl and Apogee). These systems support **continuous, large‑scale deployment**, ensuring the block is fully operational in production settings.
+
+---
+
+## **3. Scope of change**
+
+- No existing blocks were modified or deprecated.  
+- The CIF remains lightweight and backward compatible.  
+- Version increment reflects the introduction of two new scientific domains essential for yield explanation:  
+  **soil microbiome biology** and **dynamic light environment monitoring**.  
+
+Together, these additions significantly enhance the CIF’s ability to model and explain yield variability using **scalable, production‑ready measurement systems**.
+
 ## Version: 4.0 — 2026‑04‑10
 
 This release introduces a major structural extension of the CIF:  
@@ -81,11 +145,19 @@ This reflects our strategy to make **CIF a fully open standard** for precision a
 
 ## Project Ownership
 
-Owner & Founder: **Jan Affolter — [jan.affolter@gmail.com](mailto:jan.affolter@gmail.com)** 
+Owner & Founder: **Jan Affolter — [jan.affolter@autofarm.global](mailto:jan.affolter@autofarm.global)** 
 
-Background IP: **Jan Affolter ITS (CHE‑104.801.264), owner of the CompaniX project.**
+Web site : **[autofarm.global](https://autofarm.global)**
+
+Background IP: **Jan Affolter ITS (CHE‑104.801.264), owner of the AUTOFARM project.**
 
 Location: **Lausanne, Switzerland**  
+
+
+
+
+
+
 
 
 
