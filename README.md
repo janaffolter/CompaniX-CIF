@@ -11,7 +11,12 @@
 Reference: **136.046 IMIA‑ENG — CompaniX**
 
 ## Release Notes
-**Version: 5.0 — 2026‑05‑06**  
+## **Version: 5.1 — 2026‑06-27**  
+
+# **Release Notes**  
+## **Version: 5.1 — 2026‑06-27**
+
+This release reorganizes the JSON structure for better readability, separates observations from outcomes, and removes duplicate fields.
 
 
 # **Release Notes**  
